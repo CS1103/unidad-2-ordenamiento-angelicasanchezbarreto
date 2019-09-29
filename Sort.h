@@ -5,9 +5,18 @@
 #ifndef SORT_METHODS_SORT_H
 #define SORT_METHODS_SORT_H
 
+#include <iostream>
 
-class Sort {
+using namespace std;
 
+struct Sort {
+
+    template<typename ContainerType>
+    void print(ContainerType &cnt) {
+        for (auto i : cnt) {
+            cout << i << " ";
+        }
+    }
 };
 
 
