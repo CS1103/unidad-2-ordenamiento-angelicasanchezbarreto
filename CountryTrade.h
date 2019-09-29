@@ -11,15 +11,15 @@
 
 class CountryTrade {
 public:
-    string Country_Area;
+    std::string Country_Area;
     double Year;
-    string Commodity;
-    string Flow;
+    std::string Commodity;
+    std::string Flow;
     double Trade_usd;
 
 
-    CountryTrade();
-    CountryTrade(const string &countryArea, double year, const string &commodity, const string &flow, double tradeUsd);
+    CountryTrade()= default;
+    CountryTrade(const std::string &countryArea, double year, const std::string &commodity, const std::string &flow, double tradeUsd);
 };
 
 

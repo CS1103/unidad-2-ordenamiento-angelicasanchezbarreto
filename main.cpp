@@ -69,6 +69,8 @@ int main(){
 
     cout << endl;
 
+
+
     ifstream myfile1;
     myfile1.open("SORTS1", ios::in);
     vector<int> vector1;
@@ -90,12 +92,18 @@ int main(){
 
     cout << endl;
 
-    HeapSort s1;
+    ShellSort s1;
     s1.print(vector1);
     cout << endl;
-    //int size = sizeof(vector1);
-    s1.heapsort(vector1);
+    s1.shellSort(vector1);
     s1.print(vector1);
+    cout << endl;
+
+
+    //s1.heapsort(vector1, vector1.begin(), vector1.end(), 1);
+    //int size = sizeof(vector1);
+    //s1.heapsort(registros, registros.begin(), registros.end(),1);
+    //s1.print(registros);
     cout << endl;
 
 
